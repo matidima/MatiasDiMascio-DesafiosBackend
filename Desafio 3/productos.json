@@ -1,0 +1,20 @@
+[
+   {
+      "title": "Producto 1",
+      "price": 1000,
+      "thumbnail": "https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/KUFCDXCONRDCHFF5Z4XVP6DZKM.jpg",
+      "id": 1
+   },
+   {
+      "title": "Producto 2",
+      "price": 800,
+      "thumbnail": "https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/KUFCDXCONRDCHFF5Z4XVP6DZKM.jpg",
+      "id": 2
+   },
+   {
+      "title": "Producto 3",
+      "price": 4500,
+      "thumbnail": "https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/KUFCDXCONRDCHFF5Z4XVP6DZKM.jpg",
+      "id": 3
+   }
+]
