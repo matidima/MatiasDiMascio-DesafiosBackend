@@ -32,9 +32,6 @@ routerProductos.post("/", async (req, res) => {
 routerProductos.post("/", async (req, res) => {
   try {
     const { nombre, descripcion, codigo, thumbnail, precio, stock } = req.body;
-
-    // con el validador que creamos en el archivo joi validator, podemos invocar al método validateAsync y pasarle las propiedades que creemos seran nuestro producto, y si están bien, nos devolvera el objeto que guardamos en product
-    // si no, saltará al catch
     const product = ({
       nombre,
       descripcion,
