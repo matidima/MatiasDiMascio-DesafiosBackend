@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "637d3db29d312dd972fba004"
+  },
+  "name": "mati",
+  "text": "hola",
+  "timestamp": "2/11/2022"
+},{
+  "_id": {
+    "$oid": "637d3db29d312dd972fba005"
+  },
+  "name": "nico",
+  "text": "hola",
+  "timestamp": "2/11/2022"
+},{
+  "_id": {
+    "$oid": "637d3db29d312dd972fba006"
+  },
+  "name": "mati",
+  "text": "como estas?",
+  "timestamp": "2/11/2022"
+},{
+  "_id": {
+    "$oid": "637d3db29d312dd972fba007"
+  },
+  "name": "nico",
+  "text": "bien vos?",
+  "timestamp": "2/11/2022"
+},{
+  "_id": {
+    "$oid": "637d3db29d312dd972fba008"
+  },
+  "name": "mati",
+  "text": "bien bien",
+  "timestamp": "2/11/2022"
+}]

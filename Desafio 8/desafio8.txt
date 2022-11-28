@@ -1,0 +1,185 @@
+use ecommerce
+
+db.createCollection('mensajes')
+db.createCollection('productos')
+
+show collections
+
+1 y 2) 
+db.productos.insert([
+    {
+        "title": "producto 1",
+        "price": 500,
+        "thumbnail": "foto 1",
+        "code": 1111,
+        "description": "descripcion 1",
+        "stock": 90
+    },
+    {
+        "title": "producto 2",
+        "price": 1000,
+        "thumbnail": "foto 2",
+        "code": 2222,
+        "description": "descripcion 2",
+        "stock": 75
+    },
+    {
+        "title": "producto 3",
+        "price": 1500,
+        "thumbnail": "foto 3",
+        "code": 3333,
+        "description": "descripcion 3",
+        "stock": 300
+    },
+    {
+        "title": "producto 4",
+        "price": 2000,
+        "thumbnail": "foto 4",
+        "code": 4444,
+        "description": "descripcion 4",
+        "stock": 10
+    },
+    {
+        "title": "producto 5",
+        "price": 2500,
+        "thumbnail": "foto 5",
+        "code": 5555,
+        "description": "descripcion 5",
+        "stock": 260
+    },
+    {
+        "title": "producto 6",
+        "price": 3000,
+        "thumbnail": "foto 6",
+        "code": 6666,
+        "description": "descripcion 6",
+        "stock": 50
+    },
+    {
+        "title": "producto 7",
+        "price": 3500,
+        "thumbnail": "foto 7",
+        "code": 7777,
+        "description": "descripcion 7",
+        "stock": 120
+    },
+    {
+        "title": "producto 8",
+        "price": 4000,
+        "thumbnail": "foto 8",
+        "code": 8888,
+        "description": "descripcion 8",
+        "stock": 80
+    },
+    {
+        "title": "producto 9",
+        "price": 4500,
+        "thumbnail": "foto 9",
+        "code": 9999,
+        "description": "descripcion 9",
+        "stock": 30
+    },
+    {
+        "title": "producto 10",
+        "price": 5000,
+        "thumbnail": "foto 10",
+        "code": 10101010,
+        "description": "descripcion 10",
+        "stock": 40
+    }
+])
+
+db.mensajes.insert([
+    {
+        "name": "mati",
+        "text": "hola",
+        "timestamp": "2/11/2022"
+    },
+    {
+        "name": "nico",
+        "text": "hola",
+        "timestamp": "2/11/2022"
+    },
+    {
+        "name": "mati",
+        "text": "como estas?",
+        "timestamp": "2/11/2022"
+    },
+    {
+        "name": "nico",
+        "text": "bien vos?",
+        "timestamp": "2/11/2022"
+    },
+    {
+        "name": "mati",
+        "text": "bien bien",
+        "timestamp": "2/11/2022"
+    },
+    {
+        "name": "nico",
+        "text": "que haces?",
+        "timestamp": "2/11/2022"
+    },
+    {
+        "name": "mati",
+        "text": "aprendiendo con el curso de coder",
+        "timestamp": "2/11/2022"
+    },
+    {
+        "name": "nico",
+        "text": "ah que bien, yo tambien me iba a anotar en un curso",
+        "timestamp": "2/11/2022"
+    },
+    {
+        "name": "mati",
+        "text": "estan muy buenos, aprendes bastante la verdad",
+        "timestamp": "2/11/2022"
+    }
+])
+
+
+3)
+db.productos.find()
+db.mensajes.find()
+
+
+4)
+db.productos.estimatedDocumentCount()
+db.mensajes.estimatedDocumentCount()
+
+
+5) a) Agregar un producto más en la colección de productos 
+
+db.products.insertOne({
+        "title": "producto 11",
+        "price": 5000,
+        "thumbnail": "foto 11",
+        "code": 11111111,
+        "description": "descripcion 11",
+        "stock": 240
+    })
+
+5) b) i) 
+db.productos.find({ "price": { $lte : 1000}})
+
+5) b) ii)
+db.productos.find({$and:[{"price":{$gte:1000}},{"price":{$lte:3000}}]})
+
+5) b) iii)
+db.productos.find({ "price": { $gte : 3000}})
+
+5) b) iv)
+db.productos.find().skip(2).limit(1).sort({"price":1})
+
+5) c)
+db.productos.updateMany({},{ $set:{'stock': 100}}, {multi:true})
+
+5) d)
+db.productos.update({'price':{$gte:4000}},{ $set:{'stock': 0}}, {multi:true})
+
+5) e)
+db.productos.deleteMany({'price':{$lte:1000}})
+
+
+6)
+db.createUser({'user':'pepe','pwd':'asd456','roles':[{role:'read', db:'ecommerce'}]})

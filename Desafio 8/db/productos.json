@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "637d47769d312dd972fba00c"
+  },
+  "title": "producto 3",
+  "price": 1500,
+  "thumbnail": "foto 3",
+  "code": 3333,
+  "description": "descripcion 3",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "637d47769d312dd972fba00d"
+  },
+  "title": "producto 4",
+  "price": 2000,
+  "thumbnail": "foto 4",
+  "code": 4444,
+  "description": "descripcion 4",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "637d47769d312dd972fba00e"
+  },
+  "title": "producto 5",
+  "price": 2500,
+  "thumbnail": "foto 5",
+  "code": 5555,
+  "description": "descripcion 5",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "637d47769d312dd972fba00f"
+  },
+  "title": "producto 6",
+  "price": 3000,
+  "thumbnail": "foto 6",
+  "code": 6666,
+  "description": "descripcion 6",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "637d47769d312dd972fba010"
+  },
+  "title": "producto 7",
+  "price": 3500,
+  "thumbnail": "foto 7",
+  "code": 7777,
+  "description": "descripcion 7",
+  "stock": 100
+},{
+  "_id": {
+    "$oid": "637d47769d312dd972fba011"
+  },
+  "title": "producto 8",
+  "price": 4000,
+  "thumbnail": "foto 8",
+  "code": 8888,
+  "description": "descripcion 8",
+  "stock": 0
+},{
+  "_id": {
+    "$oid": "637d47769d312dd972fba012"
+  },
+  "title": "producto 9",
+  "price": 4500,
+  "thumbnail": "foto 9",
+  "code": 9999,
+  "description": "descripcion 9",
+  "stock": 0
+},{
+  "_id": {
+    "$oid": "637d47769d312dd972fba013"
+  },
+  "title": "producto 10",
+  "price": 5000,
+  "thumbnail": "foto 10",
+  "code": 10101010,
+  "description": "descripcion 10",
+  "stock": 0
+}]
