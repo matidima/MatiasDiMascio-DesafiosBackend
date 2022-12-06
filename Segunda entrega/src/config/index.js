@@ -1,18 +1,18 @@
-import dotenv from 'dotenv'
-dotenv.config()
 
 const config = {
     SERVER: {
-        PORT: process.env.PORT || 8080,
-        SELECTED_DATABASE: process.env.SELECTED_DB ?? 'database'
+        PORT: 8080,
+        SELECTED_DATABASE: "mongo"
     },
 
     DATABASE: {
         mongo: {
-            url: process.env.MONGO_DB_URL,
-            dbName: process.env.MONGO_DB_NAME
+            url: `mongodb+srv://matidima:HNIlXZrVnoqCt8Rx@cluster0.7ujig2q.mongodb.net/?retryWrites=true&w=majority`,
+            dbName: `ecommerce`
         }
     }
 }
 
 export { config }
+
+/* HNIlXZrVnoqCt8Rx   */

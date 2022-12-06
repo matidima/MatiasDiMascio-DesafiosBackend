@@ -21,4 +21,4 @@ cartSchema.set("toJSON", {
   },
 });
 
-export const cartModel = { cartCollection, cartSchema };
+export { cartCollection, cartSchema };

@@ -1,11 +1,11 @@
-import { mongoDBContainer } from "../container/mongoDBContainer.js";
-import { cartModel } from "../models/cartModel.js"
+import { mongoDBContainer } from "../../container/mongoDBContainer.js";
+import { cartCollection, cartSchema } from "../../models/cartModel.js"
 
 export class cartMongo extends mongoDBContainer{
     constructor(){
         super({
-            name: cartModel.cartCollection,
-            schema: cartModel.cartSchema
+            name: cartCollection,
+            schema: cartSchema
         })
     }
     async getById(id) {
