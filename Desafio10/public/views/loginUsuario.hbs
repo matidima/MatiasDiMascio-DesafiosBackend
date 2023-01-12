@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+</head>
+
+<body>
+    <div class="alert alert-warning" role="alert">
+        <h1>Bienvenido {{{this.user}}}</h1>
+        <a href="/logout"><button>Desloguearse</button></a>
+    </div>
+    <form action="/login" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <input type="text" name="price" placeholder="Price">
+        <input type="text" name="thumbnail" placeholder="Thumbnail">
+        <input type="submit">
+    </form>
+    
+    <div>
+        <h1 class="title">Lista de productos</h1>
+
+        <table class="product-list">
+            <tr>
+                <th>Título</th>
+                <th>Precio</th>
+                <th>Miniatura</th>
+            </tr>
+                {{#if productos.length}}
+                {{#each productos}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.price}}</td>
+                <td><img height="72px" width="72px" src={{this.img}} /></td>
+            </tr>
+                {{/each}}
+                {{/if}}
+        </table>
+
+    </div>
+</body>
+
+</html>
