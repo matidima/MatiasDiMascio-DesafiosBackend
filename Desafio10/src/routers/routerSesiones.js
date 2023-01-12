@@ -9,7 +9,7 @@ routerSesiones.get('/login', (req, res) =>{
 
 routerSesiones.post('/login', (req, res) =>{
     const productos = createFakeProducts(5)
-    const user = "Matias"
+    const { user } = req.body
     req.session.user = user
     res.render('loginUsuario.hbs', {
         user,
