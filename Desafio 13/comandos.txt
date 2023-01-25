@@ -1,0 +1,9 @@
+EJECUCION SERVIDOR EN MODO FORK O CLUSTER
+
+nodemon index.js --MODO FORK
+nodemon index.js --MODO CLUSTER
+
+EJECUCION DE SERVIDOR CON pm2
+
+pm2 start index.js -- --PORT 8081
+pm2 start index.js -i max -- --PORT 8081
