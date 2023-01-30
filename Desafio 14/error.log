@@ -1,0 +1,6 @@
+{"level":40,"time":1674942865013,"pid":16052,"hostname":"DESKTOP-3J4IMI5","msg":"Ruta inexistente"}
+{"level":40,"time":1674946439100,"pid":3588,"hostname":"DESKTOP-3J4IMI5","msg":"Ruta inexistente"}
+{"level":50,"time":1674946635901,"pid":10940,"hostname":"DESKTOP-3J4IMI5","msg":"getAll error:TypeError: ProductDao.getAl is not a function"}
+{"level":30,"time":1674946869049,"pid":20952,"hostname":"DESKTOP-3J4IMI5","msg":"Servidor escuchando en puerto 8080"}
+{"level":40,"time":1675034959885,"pid":8448,"hostname":"DESKTOP-3J4IMI5","msg":"Ruta inexistente"}
+{"level":30,"time":1675035076177,"pid":20344,"hostname":"DESKTOP-3J4IMI5","msg":"Servidor escuchando en puerto 8080"}
