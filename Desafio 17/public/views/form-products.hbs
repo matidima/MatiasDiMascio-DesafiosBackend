@@ -1,0 +1,44 @@
+<div>
+    <h2 class="title">Formulario de productos</h2>
+    <form class="form" action="/products" method="post">
+        <input type="text" name="title" placeholder="Titulo" required >
+        <input type="text" name="description" placeholder="Descripcion" required >
+        <input type="text" name="code" placeholder="Codigo" required >
+        <input type="text" name="price" placeholder="Precio" required >
+        <input type="text" name="thumbnail" placeholder="Imagen" required >
+        <input type="text" name="stock" placeholder="Stock" required >
+        <input type="submit">
+    </form>
+</div>
+
+<div>
+  <h2 class="title">Lista de productos</h2>
+
+  <table class="product-list">
+    <tr>
+      <th>Título</th>
+      <th>Precio</th>
+      <th>Miniatura</th>
+    </tr>
+    {{#if productos.length}}
+      {{#each productos}}
+        <tr>
+          <td>{{this.title}}</td>
+          <td>{{this.price}}</td>
+          <td><img height="72px" width="72px" src={{this.thumbnail}} /></td>
+        </tr>
+      {{/each}}
+    {{/if}}
+  </table>
+
+</div>
+
+<style>
+  table, th, td { border: 1px solid; }
+  .form { margin: 30px; }
+  .title { text-align: center; }
+  .product-list { width: 90%; margin: 30px; }
+  .button { margin: 30px; }
+</style>
+
+<a class="button" href="/login"><button>Ir a login</button></a>
