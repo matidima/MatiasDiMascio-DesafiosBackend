@@ -1,5 +1,5 @@
 {
-  "name": "tercera-entrega",
+  "name": "desafio-16",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,7 @@
     "fork": "node server.js --MODO FORK",
     "cluster": "node server.js --MODO CLUSTER"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {

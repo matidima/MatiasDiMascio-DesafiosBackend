@@ -1,6 +1,6 @@
 import { fork } from 'child_process'
 import { Router } from "express"
-import { IncorrectRoute } from "../middlewares/routeError.js";
+import { IncorrectRoute } from "../middlewares/index.js";
 
 const router = Router()
 

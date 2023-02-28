@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { ProductController } from "../controllers/products.js";
-import { IncorrectRoute } from "../middlewares/routeError.js";
+import { ProductController } from "../controllers/index.js";
+import { IncorrectRoute } from "../middlewares/index.js";
 
 const router = Router();
 

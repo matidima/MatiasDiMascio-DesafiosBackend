@@ -1,6 +1,6 @@
 import { Router } from "express";
 import passport from "passport";
-import { PassportAuth } from "../middlewares/passportAuth.js";
+import { PassportAuth } from "../middlewares/index.js";
 
 const router = Router();
 

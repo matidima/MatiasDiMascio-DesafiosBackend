@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { INFO } from "../../src/utils/info.js"
-import { IncorrectRoute } from "../middlewares/routeError.js";
+import { IncorrectRoute } from "../middlewares/index.js";
 
 const router = Router()
 

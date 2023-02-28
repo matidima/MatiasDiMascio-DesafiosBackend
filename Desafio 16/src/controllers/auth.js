@@ -1,4 +1,4 @@
-import { UserModel } from "../models/user.js";
+import { UserModel } from "../models/index.js";
 import { BCRYPT_VALIDATION } from "../utils/bcrypt.js";
 import { EMAIL_UTILS } from "../utils/nodemailer.js";
 
