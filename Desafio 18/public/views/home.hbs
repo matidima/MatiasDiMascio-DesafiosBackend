@@ -1,0 +1,18 @@
+<div class="container my-5">
+  <div class="jumbotron">
+    <h1>Bienvenido {{ username }}</h1>
+    <hr>
+    <span>Email: {{ email }}</span><hr>
+    <span>Dirección: {{ address }}</span><hr>
+    <span>Edad: {{ age }}</span><hr>
+    <span>Telefono: {{ phone }}</span><hr>
+    <img src="{{ thumbnail }}" alt="avatar" style="height: 100px; width:100px">
+    <div class="text-left">
+      <button class="btn btn-danger my-3" onclick="location.href = '/logout'">Logout</button>
+      <button class="btn btn-success my-3" onclick="location.href = '/products'">Productos</button>
+    </div>
+    <div class="text-left">
+      
+    </div>
+  </div>
+</div>
