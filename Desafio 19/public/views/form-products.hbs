@@ -1,0 +1,23 @@
+<div>
+    <h2 class="title">Formulario de productos</h2>
+    <form class="form" action="/products/create" method="post">
+        <input type="text" name="title" placeholder="Titulo" required >
+        <input type="text" name="description" placeholder="Descripcion" required >
+        <input type="text" name="code" placeholder="Codigo" required >
+        <input type="text" name="price" placeholder="Precio" required >
+        <input type="text" name="thumbnail" placeholder="Imagen" required >
+        <input type="text" name="stock" placeholder="Stock" required >
+        <input type="submit">
+    </form>
+</div>
+
+<a class="button" href="/login"><button>Ir a login</button></a>
+<a class="button" href="/products"><button>Ir a productos</button></a>
+
+<style>
+  table, th, td { border: 1px solid; }
+  .form { margin: 30px; }
+  .title { text-align: center; }
+  .product-list { width: 90%; margin: 30px; }
+  .button { margin: 30px; }
+</style>
